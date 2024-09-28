@@ -38,7 +38,7 @@
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
     "youtube-transcript": "^1.2.1",
-    "youtubei.js": "^10.4.0"
+    "youtubei.js": "^9.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
