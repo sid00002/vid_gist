@@ -1,5 +1,6 @@
 "use server";
 import prisma from "@/lib/db.config";
+import { revalidateTag } from "next/cache";
 
 export async function minusCoins(user_id: number | string): Promise<void> {
   await prisma.user.update({
@@ -52,3 +53,6 @@ export async function updateSummary(data: string, id: string): Promise<void> {
     },
   });
 }
+export const clearCache = (key: string) => {
+  revalidateTag(key);
+};
